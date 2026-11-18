@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <title>Кошик</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<h1>Кошик</h1>
-<div id="cart-container"></div>
 
+    <header class="cart-header">
+        <h1 class="name shop-logo">H.Shop</h1>
+        <input type="text" id="searchInput" class="search" placeholder="Пошук товарів...">
+        <div class="user-icon"></div>
+    </header>
 
-<script src="script.js"></script>
+    <main class="cart-main">
+        <div class="cart-links">
+            <a href="catalog.html" class="cart-link">каталог</a>
+            <a href="index.html" class="cart-link">головна</a>
+        </div>
+
+        <div id="cart-container"></div>
+        <form id="orderForm" method="POST">
+            <h3>Оформлення замовлення ^.^</h3>
+    <input type="text" id="userName" placeholder="Ваше ім'я">
+    <input type="tel" id="userPhone" placeholder="Телефон">
+    <input type="email" id="userEmail" placeholder="Пошта">
+    <input type="text" id="userAddress" placeholder="Адреса доставки">
+    <button type="submit">Підтвердити</button>
+</form>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

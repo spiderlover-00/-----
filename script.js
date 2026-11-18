@@ -74,16 +74,19 @@ function renderCart() {
     container.innerHTML = "";
 
     if (cart.length === 0) {
-        container.innerHTML = "<h2>Кошик порожній 🛒</h2>";
+        container.innerHTML = "<h2>Кошик порожній... :_(</h2>";
         return;
     }
 
     cart.forEach(product => {
         container.innerHTML += `
             <div class="cart-item">
-                <h3>${product.name}</h3>
-                <p>Ціна: ${product.price} грн</p>
-                <p>Кількість: ${product.quantity}</p>
+                <img src="img/${product.image || 'default.png'}" alt="${product.name}" style="width: 70px; height: 70px; object-fit: cover; border-radius: 10px;">
+                <div>
+                    <h3>${product.name}</h3>
+                    <p>Ціна: ${product.price} грн</p>
+                    <p>Кількість: ${product.quantity}</p>
+                </div>
                 <button onclick="removeFromCart(${product.id})">
                     Видалити
                 </button>
@@ -108,3 +111,62 @@ function removeFromCart(productId) {
 
 renderCart();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const searchInput = document.getElementById('searchInput');
+
+if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+        const searchText = e.target.value.toLowerCase();
+        
+       
+        const filteredProducts = products.filter(product => 
+            product.name.toLowerCase().includes(searchText)
+        );
+        
+   
+        displayProducts(filteredProducts);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+const checkoutForm = document.getElementById('orderForm');
+
+if (checkoutForm) {
+    checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+       
+
+        alert('Дякуємо за замовлення!');
+        
+        cart = []; 
+        saveJsonCookie('cart', cart, 3600 * 24 * 7);
+       displayCart(); 
+        checkoutForm.reset();
+    });
+}

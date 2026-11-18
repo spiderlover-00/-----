@@ -298,3 +298,197 @@ a, p, h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Стили для сторінки кошика (cart.html) --- */
+
+.cart-header {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: linear-gradient(90deg, #000000 0%, #4B4B4B 100%);
+    width: 100%;
+}
+
+.cart-main {
+    flex: 1;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E2E2E2 100%);
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-links {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.cart-link {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 36px;
+    color: #323232;
+    text-decoration: none;
+}
+
+.cart-link:hover {
+    text-decoration: underline;
+}
+
+#cart-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item {
+    background: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #000000;
+}
+
+.cart-item p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #4B4B4B;
+}
+
+.cart-item button {
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Play", sans-serif;
+    
+}
+
+.cart-item button:hover {
+    background: #444444;
+}
+
+#cart-container h2 {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#searchInput {
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    font-family: "Play", sans-serif;
+    font-size: 16px;
+    color: #323232;
+}
+
+#searchInput::placeholder {
+    color: #848484;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    position: relative; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px; 
+}
+
+.main-illustration {
+    width: 550px; 
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#orderForm {
+margin-top: 40px; 
+width: 90%;
+ display: flex; 
+flex-direction: column; 
+ gap: 15px;
+ padding: 20px;
+}
