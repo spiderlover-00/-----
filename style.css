@@ -272,7 +272,7 @@ a, p, h2 {
 }
 
 .add-cart:hover {
-    background: #444444;
+    background: #353535;
 }
 
 
@@ -312,7 +312,7 @@ a, p, h2 {
 
 
 
-/* --- Стили для сторінки кошика (cart.html) --- */
+
 
 .cart-header {
     height: 104px;
